@@ -1,0 +1,81 @@
+decoration: BoxDecoration(
+                  color: darkMode ? Colors.grey[850] : Colors.grey[300],
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
+                  boxShadow: [
+                    BoxShadow(
+                        color: darkMode ? Colors.black54 : Colors.grey[500],
+                        offset: Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0),
+                    BoxShadow(
+                        color: darkMode ? Colors.grey[800] : Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0),
+                  ]),
+
+
+Container(
+                  height: 40,
+                  width: 100,
+                  child: Center(
+                    child: Text(
+                      'Calculator',
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    borderRadius: BorderRadius.all(Radius.circular(50)),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black45,
+                        offset: Offset(4.0, 4.0),
+                        blurRadius: 10.0,
+                        spreadRadius: 1.0,
+                      ),
+                      BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 10.0,
+                        spreadRadius: 1.0,
+                      ),
+                    ],
+                  ),
+                ),
+
+ NeumorphicButton(
+                  style: NeumorphicStyle(
+                    color: Colors.black,
+                    depth: 2,
+                  ),
+                  child: Container(
+                    height: 40,
+                    width: 30,
+                    child: Center(
+                      child: Text(
+                        'C',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+ NeumorphicButton(
+                  style: NeumorphicStyle(
+                    color: Colors.white,
+                    depth: 2,
+                  ),
+                  onPressed: () {},
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        'Calculator',
+                      ),
+                    ),
+                  ),
+                ),
+
+flutter_neumorphic: ^3.0.3
